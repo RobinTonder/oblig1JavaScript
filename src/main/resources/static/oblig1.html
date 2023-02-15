@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="oblig1.js"></script>
+
+
+</head>
+<body>
+<h1 style="font-size:35px;">
+
+  Bestilling av kinobiletter
+
+</h1>
+
+
+<table>
+  <tr>
+    <td>
+      Velg film
+      <select id="filmer" onchange="velg()">
+        <option>Velg film her</option>
+        <option>Aladin</option>
+        <option>Hercules</option>
+        <option>Tarzan</option>
+      </select>
+    </td>
+    <td id="filmError" class="error"></td>
+  </tr>
+</table>
+
+
+<table>
+  <tr>
+    <td>Antall:</td>
+    <td><input type="number" id ="antall" min="1" max="5"></td>
+    <td id="antallError" class="error"></td>
+
+
+  </tr>
+</table>
+
+
+
+<br>
+
+<table>
+  <tr>
+    <td>Fornavn:</td>
+    <td><input type="text" id="fornavn"></td>
+    <td id ="forNavnError" class="error"></td>
+  </tr>
+  <tr>
+    <td>Etternavn:</td>
+    <td><input type="text" id="etternavn"></td>
+    <td id ="etterNavnError" class="error"></td>
+  </tr>
+  <tr>
+    <td>Telefonnr:</td>
+    <td><input type="text" id="telefonnr"></td>
+    <td id ="telefonrError" class="error"></td>
+  </tr>
+  <tr>
+    <td>Epost:</td>
+    <td><input type="text" id="epost"></td>
+    <td id ="epostError" class="error"></td>
+  </tr>
+</table>
+
+<button onclick="leggTilKjop()">Kjøp Billett</button>
+
+
+<h2>
+  Alle Billetter
+</h2>
+
+<div id ="listeBillet"></div>
+
+<br>
+
+<button onclick="slettListe()">Slett alle billettene</button>
+
+</body>
+</html>
